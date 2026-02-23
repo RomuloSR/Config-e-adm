@@ -1,0 +1,1420 @@
+/* ===== RESET BÁSICO ===== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+/* ===== CABEÇALHO ===== */
+header {
+    background-color: #111;
+    color: white;
+    padding: 15px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* ===== MENU ===== */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #ff0000;
+}
+
+/* ===== CONTEÚDO PRINCIPAL ===== */
+main {
+    padding: 20px;
+}
+
+/* ===== RODAPÉ ===== */
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+/* =====================================================
+   ===== PÁGINA LISTA DE EQUIPES =====
+   ===================================================== */
+
+.equipe-lista {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.equipe-lista ul {
+    list-style: none;
+    padding: 0;
+}
+
+.equipe-lista li {
+    background: #f4f4f4;
+    margin: 10px 0;
+    padding: 12px;
+    border-left: 5px solid #c00000;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.equipe-lista li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.equipe-lista a {
+    text-decoration: none;
+    color: #111;
+    font-weight: bold;
+}
+
+.equipe-lista a:hover {
+    color: #c00000;
+}
+
+/* =====================================================
+   ===== HERO DA FERRARI (IMAGEM GRANDE NO TOPO) =====
+   ===================================================== */
+
+.hero-ferrari {
+    height: 90vh;
+    background: url("../Images/ferrari.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+/* camada escura sobre a imagem */
+.hero-ferrari::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* texto do hero */
+.hero-texto {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero-texto h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-texto p {
+    font-size: 20px;
+}
+
+/* =====================================================
+   ===== PÁGINA INDIVIDUAL DA EQUIPE =====
+   ===================================================== */
+
+.equipe {
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.equipe h2 {
+    color: #c00000;
+    margin-bottom: 20px;
+}
+
+.info-equipe {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.info-equipe li {
+    background: #f4f4f4;
+    margin-bottom: 8px;
+    padding: 10px;
+    border-left: 4px solid #c00000;
+}
+.hero-hamilton {
+    height: 70vh;
+    background: url("../Images/lh44.jpg") 10% 5%/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+.hero-piloto::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+}
+
+.hero-piloto .hero-texto {
+    position: relative;
+    z-index: 1;
+}
+
+/* ===== PÁGINA PILOTO ===== */
+
+.piloto-pagina {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.stat {
+    background: #111;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.stat h3 {
+    font-size: 40px;
+    margin: 0;
+    color: #e10600;
+}
+.hero-leclerc {
+    height: 70vh;
+    background: url("../Images/charlesleclerc.jpg") 10% 5%/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+.hero-piloto::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+}
+
+.hero-piloto .hero-texto {
+    position: relative;
+    z-index: 1;
+}
+/* Parte Mercedes */
+.hero-mercedes {
+    height: 90vh;
+    background: url("../Images/mercedes.png") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+/* camada escura sobre a imagem */
+.hero-ferrari::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* texto do hero */
+.hero-texto {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero-texto h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-texto p {
+    font-size: 20px;
+}
+/* ===== HERO PILOTO ===== */
+
+.hero-russell {
+    height: 70vh;
+    background: url("../Images/russell.jpg") 10% 5%/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+.hero-piloto::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+}
+
+.hero-piloto .hero-texto {
+    position: relative;
+    z-index: 1;
+}
+
+/* ===== PÁGINA PILOTO ===== */
+
+.piloto-pagina {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.stat {
+    background: #111;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.stat h3 {
+    font-size: 40px;
+    margin: 0;
+    color: #e10600;
+}
+.hero-kimi {
+    height: 70vh;
+    background: url("../Images/antonelli.png") 10% 5%/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+.hero-piloto::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+}
+
+.hero-piloto .hero-texto {
+    position: relative;
+    z-index: 1;
+}
+
+
+
+/* Parde da Redbull */
+.hero-rbr {
+    height: 90vh;
+    background: url("../Images/redbull.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+/* camada escura sobre a imagem */
+.hero-ferrari::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* texto do hero */
+.hero-texto {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero-texto h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-texto p {
+    font-size: 20px;
+}
+/* ===== SEÇÃO DE PILOTOS ===== */
+
+/* ===== SEÇÃO DE PILOTOS ===== */
+
+.piloto img {
+    height: 380px;
+}
+
+.pilotos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.piloto {
+    background: #8B0000;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.piloto:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.piloto img {
+    width: 100%;
+    height: 300px;       /* altura controlada */
+    object-fit: cover;   /* corta certinho sem deformar */
+    border-radius: 10px;
+}
+
+
+
+.piloto p {
+    font-weight: bold;
+    margin: 0;
+}
+/* Parte Mclaren */
+.hero-mclaren {
+    height: 90vh;
+    background: url("../Images/mclaren.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+/* camada escura sobre a imagem */
+.hero-ferrari::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* texto do hero */
+.hero-texto {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero-texto h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-texto p {
+    font-size: 20px;
+}
+/* ===== HERO PILOTO ===== */
+
+.hero-lando {
+    height: 70vh;
+    background: url("../Images/lando.jpg") 10% 5%/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+.hero-piloto::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+}
+
+.hero-piloto .hero-texto {
+    position: relative;
+    z-index: 1;
+}
+
+/* ===== PÁGINA PILOTO ===== */
+
+.piloto-pagina {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.stat {
+    background: #111;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.stat h3 {
+    font-size: 40px;
+    margin: 0;
+    color: #e10600;
+}
+.hero-oscar {
+    height: 70vh;
+    background: url("../Images/oscar.jpg") 10% 5%/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+.hero-piloto::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+}
+
+.hero-piloto .hero-texto {
+    position: relative;
+    z-index: 1;
+}
+/* Parte Aston Martin */
+.hero-aston {
+    height: 90vh;
+    background: url("../Images/aston.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+/* camada escura sobre a imagem */
+.hero-ferrari::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* texto do hero */
+.hero-texto {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero-texto h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-texto p {
+    font-size: 20px;
+}
+/* ===== HERO PILOTO ===== */
+
+.hero-alonso {
+    height: 70vh;
+    background: url("../Images/alonso.jpg") 10% 15%/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+.hero-piloto::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+}
+
+.hero-piloto .hero-texto {
+    position: relative;
+    z-index: 1;
+}
+
+/* ===== PÁGINA PILOTO ===== */
+
+.piloto-pagina {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.stat {
+    background: #111;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.stat h3 {
+    font-size: 40px;
+    margin: 0;
+    color: #e10600;
+}
+.hero-stroll {
+    height: 70vh;
+    background: url("../Images/stroll.jpg") 50% 25%/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+.hero-piloto::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+}
+
+.hero-piloto .hero-texto {
+    position: relative;
+    z-index: 1;
+}
+/* Parte Mclaren */
+.hero-mclaren {
+    height: 90vh;
+    background: url("../Images/mclaren.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+/* camada escura sobre a imagem */
+.hero-ferrari::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* texto do hero */
+.hero-texto {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero-texto h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-texto p {
+    font-size: 20px;
+}
+/* ===== HERO PILOTO ===== */
+
+.hero-lando {
+    height: 70vh;
+    background: url("../Images/lando.jpg") 10% 5%/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+.hero-piloto::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+}
+
+.hero-piloto .hero-texto {
+    position: relative;
+    z-index: 1;
+}
+
+/* ===== PÁGINA PILOTO ===== */
+
+.piloto-pagina {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.stat {
+    background: #111;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.stat h3 {
+    font-size: 40px;
+    margin: 0;
+    color: #e10600;
+}
+.hero-oscar {
+    height: 70vh;
+    background: url("../Images/oscar.jpg") 10% 5%/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+.hero-piloto::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+}
+
+.hero-piloto .hero-texto {
+    position: relative;
+    z-index: 1;
+}
+/* Parte Racing Bulls */
+.hero-racing {
+    height: 90vh;
+    background: url("../Images/racing2.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+/* camada escura sobre a imagem */
+.hero-ferrari::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* texto do hero */
+.hero-texto {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero-texto h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-texto p {
+    font-size: 20px;
+}
+/* ===== HERO PILOTO ===== */
+
+.hero-liam {
+    height: 70vh;
+    background: url("../Images/liam.jpg") 10% 15%/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+.hero-piloto::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+}
+
+.hero-piloto .hero-texto {
+    position: relative;
+    z-index: 1;
+}
+
+/* ===== PÁGINA PILOTO ===== */
+
+.piloto-pagina {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.stat {
+    background: #111;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.stat h3 {
+    font-size: 40px;
+    margin: 0;
+    color: #e10600;
+}
+.hero-arvid {
+    height: 70vh;
+    background: url("../Images/arvid.jpg") 50% 25%/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+.hero-piloto::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+}
+
+.hero-piloto .hero-texto {
+    position: relative;
+    z-index: 1;
+}
+/* Parte Haas */
+.hero-haas {
+    height: 90vh;
+    background: url("../Images/haas.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+/* camada escura sobre a imagem */
+.hero-ferrari::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* texto do hero */
+.hero-texto {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero-texto h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-texto p {
+    font-size: 20px;
+}
+/* ===== HERO PILOTO ===== */
+
+.hero-ocon {
+    height: 70vh;
+    background: url("../Images/ocon.jpg") 10% 15%/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+.hero-piloto::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+}
+
+.hero-piloto .hero-texto {
+    position: relative;
+    z-index: 1;
+}
+
+/* ===== PÁGINA PILOTO ===== */
+
+.piloto-pagina {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.stat {
+    background: #111;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.stat h3 {
+    font-size: 40px;
+    margin: 0;
+    color: #e10600;
+}
+.hero-oliver {
+    height: 70vh;
+    background: url("../Images/oliver.jpg") 50% 25%/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+.hero-piloto::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+}
+
+.hero-piloto .hero-texto {
+    position: relative;
+    z-index: 1;
+}
+/* Parte Audi */
+.hero-audi {
+    height: 90vh;
+    background: url("../Images/audi.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+/* camada escura sobre a imagem */
+.hero-ferrari::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* texto do hero */
+.hero-texto {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero-texto h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-texto p {
+    font-size: 20px;
+}
+/* ===== HERO PILOTO ===== */
+
+.hero-nico {
+    height: 70vh;
+    background: url("../Images/nico.jpg") 10% 15%/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+.hero-piloto::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+}
+
+.hero-piloto .hero-texto {
+    position: relative;
+    z-index: 1;
+}
+
+/* ===== PÁGINA PILOTO ===== */
+
+.piloto-pagina {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.stat {
+    background: #111;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.stat h3 {
+    font-size: 40px;
+    margin: 0;
+    color: #e10600;
+}
+.hero-gabriel {
+    height: 70vh;
+    background: url("../Images/gabriel.jpg") 50% 25%/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+.hero-piloto::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+}
+
+.hero-piloto .hero-texto {
+    position: relative;
+    z-index: 1;
+}
+
+/* Parte Cadilac */
+.hero-cadilac {
+    height: 90vh;
+    background: url("../Images/cadilac.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+/* camada escura sobre a imagem */
+.hero-ferrari::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* texto do hero */
+.hero-texto {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero-texto h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-texto p {
+    font-size: 20px;
+}
+/* ===== HERO PILOTO ===== */
+
+.hero-bottas {
+    height: 70vh;
+    background: url("../Images/bottas.jpg") 10% 15%/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+.hero-piloto::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+}
+
+.hero-piloto .hero-texto {
+    position: relative;
+    z-index: 1;
+}
+
+/* ===== PÁGINA PILOTO ===== */
+
+.piloto-pagina {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.stat {
+    background: #111;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.stat h3 {
+    font-size: 40px;
+    margin: 0;
+    color: #e10600;
+}
+.hero-perez {
+    height: 70vh;
+    background: url("../Images/perez.jpg") 50% 25%/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+.hero-piloto::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+}
+
+.hero-piloto .hero-texto {
+    position: relative;
+    z-index: 1;
+}
+
+/* Parte Alpine */
+.hero-alpine {
+    height: 90vh;
+    background: url("../Images/alpine.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+/* camada escura sobre a imagem */
+.hero-ferrari::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* texto do hero */
+.hero-texto {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero-texto h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-texto p {
+    font-size: 20px;
+}
+/* ===== HERO PILOTO ===== */
+
+.hero-pierre {
+    height: 70vh;
+    background: url("../Images/pierre.jpg") 10% 15%/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+.hero-piloto::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+}
+
+.hero-piloto .hero-texto {
+    position: relative;
+    z-index: 1;
+}
+
+/* ===== PÁGINA PILOTO ===== */
+
+.piloto-pagina {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.stat {
+    background: #111;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.stat h3 {
+    font-size: 40px;
+    margin: 0;
+    color: #e10600;
+}
+.hero-franco {
+    height: 70vh;
+    background: url("../Images/franco.jpg") 50% 25%/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+.hero-piloto::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+}
+
+.hero-piloto .hero-texto {
+    position: relative;
+    z-index: 1;
+}
+/* Parte Williams */
+.hero-williams {
+    height: 90vh;
+    background: url("../Images/williams.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+/* camada escura sobre a imagem */
+.hero-ferrari::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* texto do hero */
+.hero-texto {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero-texto h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-texto p {
+    font-size: 20px;
+}
+/* ===== HERO PILOTO ===== */
+
+.hero-alex {
+    height: 70vh;
+    background: url("../Images/alex.jpg") 10% 15%/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+.hero-piloto::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+}
+
+.hero-piloto .hero-texto {
+    position: relative;
+    z-index: 1;
+}
+
+/* ===== PÁGINA PILOTO ===== */
+
+.piloto-pagina {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.stat {
+    background: #111;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.stat h3 {
+    font-size: 40px;
+    margin: 0;
+    color: #e10600;
+}
+.hero-carlos {
+    height: 70vh;
+    background: url("../Images/carlos.jpg") 50% 25%/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+.hero-piloto::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+}
+
+.hero-piloto .hero-texto {
+    position: relative;
+    z-index: 1;
+}
+
+
+
+
